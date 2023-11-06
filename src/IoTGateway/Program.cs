@@ -14,6 +14,7 @@ try
     builder.Services.AddControllers();
     builder.Services.AddSingleton<IMyModbusClient, MyModbusClient>();
     builder.Services.AddSingleton<IDataSeriesRepository, InMemoryDataSeriesRepository>();
+    // builder.Services.AddSingleton<IDataSeriesRepository, InfluxDataSeriesRepository>();
     builder.Services.AddHostedService<RepositoryManagementService>();
 
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
