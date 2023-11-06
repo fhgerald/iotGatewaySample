@@ -28,10 +28,10 @@ namespace IoTGateway.Repositories
 		{
 			var dataPoints = _dataSeries.GetOrAdd(reference, new ConcurrentDictionary<DateTime, object?>());
 			var pairs = Volatile.Read(ref dataPoints)
-				.SkipWhile(p => p.Key < startDateTime)
-				.TakeWhile(p => p.Key <= endDateTime);
+					.Where(p => (p.Key >= startDateTime && p.Key <= endDateTime));
+			pairs = pairs.OrderBy(p => p.Key);
 
-			if (skip != null)
+            if (skip != null)
 			{
 				pairs = pairs.Skip(skip.Value);
 			}
@@ -39,8 +39,8 @@ namespace IoTGateway.Repositories
 			{
 				pairs = pairs.Take(take.Value);
 			}
-			
-			return Task.FromResult(pairs.Select(kvp => new DataPoint(reference, kvp.Key, kvp.Value)));
+
+            return Task.FromResult(pairs.Select(kvp => new DataPoint(reference, kvp.Key, kvp.Value)));
 
 		}
 
