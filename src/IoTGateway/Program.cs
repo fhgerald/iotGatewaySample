@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using IoTGateway.ModbusClient;
 using IoTGateway.Repositories;
 using IoTGateway.Services;
