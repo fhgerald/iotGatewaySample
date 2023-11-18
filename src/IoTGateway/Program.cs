@@ -13,7 +13,8 @@ try
 
     // Add services to the container.
     builder.Services.AddControllers();
-    builder.Services.AddSingleton<IMyModbusClient, MyModbusClient>();
+    // TODO: Reactivate when implemented.
+   // builder.Services.AddSingleton<IMyModbusClient, MyModbusClient>();
     builder.Services.AddSingleton<IDataSeriesRepository, InMemoryDataSeriesRepository>();
     // builder.Services.AddSingleton<IDataSeriesRepository, InfluxDataSeriesRepository>();
     builder.Services.AddHostedService<RepositoryManagementService>();
