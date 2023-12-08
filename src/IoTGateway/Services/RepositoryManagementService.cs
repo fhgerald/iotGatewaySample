@@ -48,6 +48,19 @@ internal class RepositoryManagementService : IHostedService
                     return Convert.ToDouble(value);
                 }, new Reference("Power_W"));
             _recorders.Add(seriesRecorder);
+            
+            seriesRecorder = new DataSeriesRecorder<double?>(_repositoryService, time,
+                () =>
+                {
+                    var value = _myModbusClient.GetInputRegisterValue(10 + 4);
+                    if (value == null)
+                    {
+                        return null;
+                    }
+
+                    return Convert.ToDouble(value);
+                }, new Reference("Voltage_cV"));
+            _recorders.Add(seriesRecorder);
 
             // This call "starts" the production for simulation purposes
             Logger.Info("Startup: Starting production for simulation purposes.");
