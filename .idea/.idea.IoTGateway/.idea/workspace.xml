@@ -10,7 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40a9c116-6c92-4212-a7f0-b9d258f2fcad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/IoTGateway/Controllers/SimpleJsonController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IoTGateway/DataHandling/DataSeriesFilter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IoTGateway/DataHandling/DateTimeExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IoTGateway/ViewModels/DateTimeRangeViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IoTGateway/ViewModels/OutputFormat.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IoTGateway/ViewModels/QueryViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IoTGateway/ViewModels/ReferenceViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IoTGateway/ViewModels/TargetViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IoTGateway/ViewModels/TimeSeriesViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IoTGateway/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IoTGateway/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IoTGateway/Services/RepositoryManagementService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/IoTGateway/Services/RepositoryManagementService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,16 +42,14 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="dev/grafana" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8ca74247bed24f4d8d7f5b07e3aebecce200/ab/65276574/FluxRecord.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8ca74247bed24f4d8d7f5b07e3aebecce200/b0/deebb831/Column.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ad18821779d84d6fa24b81ff9492a338269000/4c/58a0fece/InfluxDBClient.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/82f3bb64e8c52af0a0175218c6cd371f393f871ffe1482a2ffd51e7efaeddbb5/Task.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache/605196423d718d19ae6d1569f3ea5498d1e454a55b717b48cb31952caa97133/ReturnValueConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache/6e3ca6302ea5e1b02a167479ad4f28b8382cd37bb04971892cee97557d3b3/A.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/IoTGateway/Controllers/HistorianController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/IoTGateway/ModbusClient/AddressRange.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/IoTGateway/ModbusClient/IMyModbusClient.cs" root0="FORCE_HIGHLIGHTING" />
@@ -51,10 +59,11 @@
     <setting file="file://$PROJECT_DIR$/src/IoTGateway/Repositories/InMemoryDataSeriesRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/IoTGateway/Services/RepositoryManagementService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/IoTGateway/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://diff.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -64,27 +73,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev/influx&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.IoTGateway: http.executor": "Debug",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "dev/influx",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/gerald/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/gerald/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache&quot;,
-      &quot;/Users/gerald/.local/share/Symbols/src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "/Users/gerald/Library/Application Support/JetBrains/Rider2023.2/resharper-host/DecompilerCache",
+      "/Users/gerald/Library/Application Support/JetBrains/Rider2023.2/resharper-host/SourcesCache",
+      "/Users/gerald/.local/share/Symbols/src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.IoTGateway: http">
     <configuration name="IoTGateway" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -176,11 +186,29 @@
       <option name="project" value="LOCAL" />
       <updated>1698327115216</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added samples of unit tests.">
+      <option name="closed" value="true" />
+      <created>1700302878337</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700302878337</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnitTestsCoverage.Settings">
+    <option name="coveragePercentColumnWidth" value="150" />
+    <option name="sortOrder" value="DESCENDING" />
+    <option name="sortedColumn" value="1" />
+    <option name="symbolColumnWidth" value="492" />
+    <coverage-tree-state>
+      <expand />
+      <select />
+    </coverage-tree-state>
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,7 +222,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="dev/influx" />
                       </list>
                     </value>
                   </entry>
@@ -211,26 +239,22 @@
     <MESSAGE value="Added initial version." />
     <MESSAGE value="Cleanup" />
     <MESSAGE value="Influx implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Influx implemented" />
+    <MESSAGE value="GetDataPointAsync: filter changes because the ConcurrentDictionary is unordered" />
+    <MESSAGE value="Added samples of unit tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added samples of unit tests." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/src/IoTGateway/Repositories/InfluxDataSeriesRepository.cs</url>
-          <line>59</line>
-          <properties documentPath="$PROJECT_DIR$/src/IoTGateway/Repositories/InfluxDataSeriesRepository.cs" initialLine="59" containingFunctionPresentation="Method 'GetReferencesAsync'" />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/src/IoTGateway/Services/RepositoryManagementService.cs</url>
-          <line>68</line>
+          <line>81</line>
           <properties documentPath="$PROJECT_DIR$/src/IoTGateway/Services/RepositoryManagementService.cs" initialLine="68" containingFunctionPresentation="Method 'StopAsync'">
             <startOffsets>
-              <option value="2288" />
+              <option value="2773" />
             </startOffsets>
             <endOffsets>
-              <option value="2332" />
+              <option value="2817" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="33" />
